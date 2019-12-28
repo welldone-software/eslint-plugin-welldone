@@ -5,16 +5,10 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "keywords": [
-    "eslint",
-    "plugin",
-    "files",
-    "structure",
-    "modules",
-    "organization"
-  ],
-  "author": "Georgii Kats",
   "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags"
+  },
   "dependencies": {
     "find-up": "^4.1.0",
     "minimatch": "^3.0.4",
@@ -24,5 +18,14 @@
     "eslint": "^6.2.0",
     "mocha": "^6.2.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "eslint",
+    "plugin",
+    "files",
+    "structure",
+    "modules",
+    "organization"
+  ],
+  "author": "Georgii Kats"
 }
