@@ -38,7 +38,14 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-these are the possible options for the `welldone/modules-engagement` rule:
+## Plugins
+### Rules of Modules Engagement ([`welldone/modules-engagement`](./rules/modules-engagement))
+
+This rule enforces Welldone's standard file structure.
+[More details about the rule](https://welldone-software.gitbook.io/welldone-file-structure/modules/modules#rules-of-engagement)
+can be found here.
+
+### config':
 
 ```json5
 {
