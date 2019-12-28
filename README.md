@@ -40,7 +40,7 @@ Then configure the rules you want to use under the rules section.
 
 these are the possible options for the `welldone/modules-engagement` rule:
 
-```json
+```json5
 {
   "rules": {
     "welldone/modules-engagement": ["error", {
