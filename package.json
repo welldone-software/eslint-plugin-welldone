@@ -1,26 +1,27 @@
 {
   "name": "eslint-plugin-welldone",
-  "version": "0.0.1",
   "description": "Custom eslint rules helpful for our needs",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "keywords": [
     "eslint",
-    "eslintplugin",
-    "eslint-plugin"
+    "plugin",
+    "files",
+    "structure",
+    "modules",
+    "organization"
   ],
   "author": "Georgii Kats",
   "main": "lib/index.js",
-  "scripts": {
-    "test": "mocha tests --recursive"
-  },
   "dependencies": {
+    "find-up": "^4.1.0",
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^6.2.0",
     "mocha": "^6.2.0"
-  },
-  "engines": {
-    "node": ">=10.0.0"
   },
   "license": "ISC"
 }
