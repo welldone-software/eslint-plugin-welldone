@@ -33,7 +33,34 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "welldone/rule-name": 2
+    "welldone/modules-engagement": "error",
+  }
+}
+```
+
+these are the possible options for the `welldone/modules-engagement` rule:
+
+```json
+{
+  "rules": {
+    "welldone/modules-engagement": ["error", {
+      // provide a glob to only lint certain paths. F.E:
+      //   glob": "/packages/!(common-package)/**/!(*.stories|*.test).js"
+      "glob": null, 
+      
+      // Levels to enforce imports between modules
+      "modulesLevels": {'common': 1, 'shared': 1, 'app': 3},
+      
+      // Default level for other modules
+      "middleModulesLevel": 2,
+      
+      // Allow importing from inner paths in modules. F.E:
+      // "moduleInnerPaths": ['/components']
+      "moduleInnerPaths": [],
+      
+      // Array of modules that can be used not only from their root path
+      "ignoreInnerPathsForModules": ['common', 'shared']
+    }],
   }
 }
 ```
