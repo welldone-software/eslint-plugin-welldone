@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-welldone",
   "description": "Custom eslint rules helpful for our needs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "node": ">=10.0.0"
   },
