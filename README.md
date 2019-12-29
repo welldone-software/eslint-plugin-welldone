@@ -39,13 +39,16 @@ Then configure the rules you want to use under the rules section.
 ```
 
 ## Plugins
-### Rules of Modules Engagement ([`welldone/modules-engagement`](./rules/modules-engagement))
+### Rules of Modules Engagement
+
+([`welldone/modules-engagement`](./rules/modules-engagement))
 
 This rule enforces Welldone's standard file structure.
 [More details about the rule](https://welldone-software.gitbook.io/welldone-file-structure/modules/modules#rules-of-engagement)
 can be found here.
 
-### config':
+### config:
+These are the possible configs and their defaults for the rule:
 
 ```json5
 {
@@ -54,6 +57,9 @@ can be found here.
       // provide a glob to only lint certain paths. F.E:
       //   glob": "/packages/!(common-package)/**/!(*.stories|*.test).js"
       "glob": null, 
+      
+      // path of modules under package.json's
+      "modulesPath": "/src",
       
       // Levels to enforce imports between modules
       "modulesLevels": {'common': 1, 'shared': 1, 'app': 3},
