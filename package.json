@@ -1,5 +1,5 @@
 {
-  "name": "@welldone-software/eslint-plugin-welldone",
+  "name": "@welldone-software/eslint-plugin",
   "description": "Custom eslint rules helpful for our needs",
   "version": "0.4.2",
   "engines": {

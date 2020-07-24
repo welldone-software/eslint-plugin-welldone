@@ -1,4 +1,4 @@
-# @welldone-software/eslint-plugin-welldone
+# @welldone-software/eslint-plugin
 
 Prevent to use anything except import/export
 
@@ -10,13 +10,13 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `@welldone-software/eslint-plugin-welldone`:
+Next, install `@welldone-software/eslint-plugin`:
 
 ```
-$ npm install @welldone-software/eslint-plugin-welldone --save-dev
+$ npm install @welldone-software/eslint-plugin --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@welldone-software/eslint-plugin-welldone` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@welldone-software/eslint-plugin` globally.
 
 ## Usage
 
