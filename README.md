@@ -20,11 +20,11 @@ $ npm install @welldone-software/eslint-plugin --save-dev
 
 ## Usage
 
-Add `welldone` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@welldone-software` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-  "plugins": ["welldone"]
+  "plugins": ["@welldone-software"]
 }
 ```
 
@@ -33,7 +33,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "welldone/modules-engagement": "error",
+    "@welldone-software/modules-engagement": "error",
   }
 }
 ```
@@ -41,7 +41,7 @@ Then configure the rules you want to use under the rules section.
 ## Plugins
 ### Rules of Modules Engagement
 
-([`welldone/modules-engagement`](./rules/modules-engagement))
+([`@welldone-software/modules-engagement`](./rules/modules-engagement))
 
 This rule enforces Welldone's standard file structure.
 [More details about the rule](https://welldone-software.gitbook.io/welldone-file-structure/modules/modules#rules-of-engagement)
@@ -53,7 +53,7 @@ These are the possible configs and their defaults for the rule:
 ```json5
 {
   "rules": {
-    "welldone/modules-engagement": ["error", {
+    "@welldone-software/modules-engagement": ["error", {
       // provide a glob to only lint certain paths. F.E:
       //   glob": "/packages/!(common-package)/**/!(*.stories|*.test).js"
       "glob": null, 
