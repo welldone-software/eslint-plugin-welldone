@@ -73,16 +73,16 @@ console.log('hi');
 ## Config
 
 ### rules
-* Schema: {critical-rule-id: {string|boolean}}
-* Default: {}
+* Schema: `{[critical-rule-id]: {string|boolean}}`
+* Default: `{}`
 
 A list of rules to disable. Rules can receive a custom message or a boolean to use the defaultMessage.
 
 ### defaultMessage
-* Schema: {string}
-* Default: 'Are you sure you want to disable the critical rule "{{critical-rule-id}}"?'
+* Schema: `string`
+* Default: `'Are you sure you want to disable the critical rule "{{critical-rule-id}}"?'`
 
-The message to display for rules configured with `true` where {{critical-rule-id}} isntances are replaced with the rule name.
+The message to display for rules configured with `true` where `{{critical-rule-id}}` instances are replaced with the rule's id.
 
 ```json
 {
