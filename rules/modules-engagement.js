@@ -1,16 +1,15 @@
 const path = require('path');
-const fs = require('fs');
 const findUp = require('find-up');
 const minimatch = require('minimatch');
 
-const {isRelative} = require('../utils');
 const {
   getModulesMappingForPkg,
   getModuleNameFromPath,
   getModuleNameFromImportRequest,
   getModuleImportPathPart,
-  getModuleLevel
-} = require('../modulesHelpers');
+  getModuleLevel,
+  isRelative,
+} = require('../utils/modulesUtils');
 
 function isRelativeModuleImport(sourceFilePath, importRequest, {modulesDir, modulesMapping}) {
   const relativeBackImport = importRequest.startsWith('..');

@@ -1,11 +1,11 @@
 {
   "name": "@welldone-software/eslint-plugin",
-  "description": "Custom eslint rules helpful for our needs",
+  "description": "Custom eslint rules used in various Welldone-Software's projects",
   "version": "0.4.4",
   "engines": {
     "node": ">=10.0.0"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "postversion": "git push && git push --tags"
   },
@@ -15,21 +15,27 @@
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "mocha": "^8.0.1"
+    "eslint": "^7.6.0"
   },
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "eslint",
     "plugin",
     "files",
     "structure",
     "modules",
-    "organization"
+    "organization",
+    "critical",
+    "ignore",
+    "disable"
   ],
-  "author": "Georgii Kats",
+  "authors": [
+    "Georgii Kats",
+    "Vitali Zaidman <vzaidman@gmail.com> (https://github.com/vzaidman)"
+  ],
   "directories": {
-    "lib": "lib"
+    "rules": "rules",
+    "docs": "docs"
   },
   "repository": {
     "type": "git",

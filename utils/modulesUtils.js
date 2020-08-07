@@ -58,4 +58,8 @@ module.exports = {
 
     return -1;
   },
+
+  isRelative(rawImportRequest) {
+    return rawImportRequest[0] === '.'
+  }
 };
