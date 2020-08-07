@@ -71,7 +71,7 @@ module.exports = {
   meta: {
     type: 'problem',
     docs: {
-      url: 'https://github.com/welldone-software/eslint-plugin-welldone/docs/no-critical-rules-disable.md',
+      url: 'https://github.com/welldone-software/eslint-plugin-welldone/blob/master/docs/no-critical-rules-disable.md',
       category: 'Disabling of critical rules',
       recommended: false
     },
